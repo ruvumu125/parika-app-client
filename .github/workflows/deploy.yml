@@ -24,8 +24,9 @@ jobs:
             # Navigate to your application directory
             cd /var/www/my-apps/parika-app-client
 
+            # Mark the directory as safe
+            git config --global --add safe.directory /var/www/my-apps/parika-app-client
+
             # Pull the latest code
             git pull origin master
-            
-           
           EOF
