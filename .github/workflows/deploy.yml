@@ -33,7 +33,7 @@ jobs:
             # Build Docker image
             docker build -t parika-app-client_web .  
             
-            # Stop and remove existing containers
+            # Stop and remove existing containersk
             docker-compose down
             
             # Start the containers
