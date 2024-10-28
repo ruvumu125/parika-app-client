@@ -1,0 +1,208 @@
+.umushishuro{
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.vehicle-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Header with full-width blue background */
+.vehicle-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+.vehicle-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.vehicle-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items horizontally */
+    margin-top: 10px;      /* Optional: Adjust margin as needed */
+}
+
+.vehicle-info {
+    padding: 10px;
+    text-align: justify; /* Justify the text */
+}
+
+.vehicle-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Reduced space from 20px to 10px */
+    margin-bottom: 20px; /* Space between QR code and footer */
+}
+
+.qr-code img {
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+/* Footer with full-width blue background */
+.vehicle-footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.vehicle-footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.separator {
+    height: 1.5px; /* Height of the separator line */
+    background-color: #007bff; /* Line color */
+    margin: 10px 0; /* Margin to create space above and below the line */
+    width: 100%; /* Width of the separator line */
+    align-self: center; /* Center the line in the flex container */
+}
+
+.vehicle-info h5 {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Nunito", sans-serif;
+}
+
+.vehicle-info h5 span {
+    color: #495057;
+    font-size: 14px;
+}
+
+
+@media print {
+    /* Hide elements that should not appear in print */
+    .print-button {
+        display: none; /* Hide the print button when printing */
+    }
+
+    .umushishuro{
+
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4 !important;;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .vehicle-card {
+        width: 300px;
+        background-color: #fff !important;;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+    }
+
+    /* Header with full-width blue background */
+    .vehicle-header {
+        background-color: #007bff !important;
+        color: white;
+        padding: 10px;
+    }
+
+    .vehicle-header h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .vehicle-content {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;    /* Center items horizontally */
+        margin-top: 10px;      /* Optional: Adjust margin as needed */
+    }
+
+    .vehicle-info {
+        padding: 10px;
+        text-align: justify; /* Justify the text */
+    }
+
+    .vehicle-info p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+
+    .qr-code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; /* Reduced space from 20px to 10px */
+        margin-bottom: 20px; /* Space between QR code and footer */
+    }
+
+    .qr-code img {
+        width: 200px; /* Increased width */
+        height: 200px; /* Increased height */
+        border: 2px solid #333;
+        border-radius: 8px;
+    }
+
+    /* Footer with full-width blue background */
+    .vehicle-footer {
+        background-color: #007bff !important;
+        color: white;
+        padding: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .vehicle-footer p {
+        margin: 0;
+        font-size: 16px;
+    }
+
+
+    .separator {
+        height: 1.5px; /* Height of the separator line */
+        background-color: #007bff !important; /* Line color */
+        margin: 10px 0; /* Margin to create space above and below the line */
+        width: 100%; /* Width of the separator line */
+        align-self: center; /* Center the line in the flex container */
+    }
+
+    .vehicle-info h5 {
+        color: #000000;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-family: "Nunito", sans-serif;
+    }
+
+    .vehicle-info h5 span {
+        color: #495057;
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,117 @@
+.premio{
+      padding: 24px 24px 0;
+      display: flex;
+      align-items: center;
+      -webkit-box-align: center;
+      -webkit-justify-content: space-between;
+      margin-bottom: 25px;
+  }
+
+.pagination-premio{
+    padding: 0 24px 0;
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 575px){
+
+    .premio {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+.deuxio{
+    position: relative;
+    margin-right: 15px;
+}
+.pagination-deuxio{
+    position: relative;
+    margin-right: 15px;
+}
+
+.trio{
+    margin-left: auto;
+    position: relative;
+    width: 185px;
+    height: 38px;
+}
+.pagination-trio{
+    margin-left: auto;
+    position: relative;
+    width: 185px;
+    height: 38px;
+}
+@media screen and (max-width: 767px){
+    .pagination-trio {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (max-width: 575px){
+
+    .trio {
+        margin-top: 24px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+.all_tables_pagination{
+    white-space: nowrap;
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.all_tables_pagination_skeleton{
+    min-width: 80px;
+    max-width: 80px;
+    white-space: nowrap;
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1115px){
+    .all_tables_pagination {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .all_tables_pagination {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+.all_tables_pagination ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 767px){
+    .all_tables_pagination ul.pagination {
+        justify-content: center !important;
+    }
+}
+
+.empty_section_title{
+    color: #1B2850;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.empty_section_paragraph{
+    margin-bottom: 20px;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+

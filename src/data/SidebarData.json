@@ -1,0 +1,136 @@
+[
+  {
+    "index": 1,
+    "title": "Tableau de bord",
+    "icon": "data-feather=\"grid\"",
+    "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"]
+  },
+  {
+    "index": 2,
+    "title": "Tableau de bord",
+    "icon": "data-feather=\"grid\"",
+    "roles": ["MAIN_ADMIN","SECONDARY_ADMIN"]
+  },
+  {
+    "index": 3,
+    "title": "Paramétrage",
+    "icon": "data-feather=\"settings\"",
+    "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN","MAIN_ADMIN","SECONDARY_ADMIN"],
+    "childrens": [
+      {
+
+        "id": 1,
+        "title": "Type de vehicules",
+        "path": "/vehicule-types",
+        "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"]
+      },
+      {
+
+        "id": 2,
+        "title": "Tarifs",
+        "path": "/prices",
+        "roles": ["MAIN_ADMIN","SECONDARY_ADMIN"]
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "title": "Gestion des entreprises",
+    "icon": "data-feather=\"box\"",
+    "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"],
+    "childrens": [
+
+      {
+        "id": 3,
+        "title": "Liste d'entreprise",
+        "path": "/companies",
+        "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"]
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "title": "Gestion des véhicule",
+    "icon": "data-feather=\"truck\"",
+    "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"],
+    "childrens": [
+
+      {
+        "id": 4,
+        "title": "Liste de véhicules",
+        "path": "/vehicules",
+        "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"]
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "title": "Parking space",
+    "icon": "data-feather=\"share\"",
+    "roles": ["MAIN_ADMIN","SECONDARY_ADMIN"],
+    "childrens": [
+
+      {
+        "id": 5,
+        "title": "Parking space list",
+        "path": "/parking-spaces",
+        "roles": ["MAIN_ADMIN","SECONDARY_ADMIN"]
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "title": "Collections",
+    "icon": "data-feather=\"bar-chart\"",
+    "roles": ["MAIN_ADMIN","SECONDARY_ADMIN","MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"],
+    "childrens": [
+
+      {
+        "id": 6,
+        "title": "My collections",
+        "path": "/collections",
+        "roles": ["MAIN_ADMIN","SECONDARY_ADMIN"]
+      },
+      {
+        "id": 7,
+        "title": "All collections",
+        "path": "/all-collections",
+        "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"]
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "title": "Gestion des utilisateurs",
+    "icon": "data-feather=\"user-check\"",
+    "roles": ["MAIN_SUPERADMIN", "MAIN_ADMIN"],
+    "childrens": [
+
+      {
+        "id": 8,
+        "title": "super administrateur",
+        "path": "/super-admins",
+        "roles": ["MAIN_SUPERADMIN"]
+      },
+      {
+        "id": 9,
+        "title": "Admin principaux",
+        "path": "/main-admins",
+        "roles": ["MAIN_SUPERADMIN"]
+      },
+      {
+        "id": 10,
+        "title": "Administrateurs",
+        "path": "/admins",
+        "roles": ["MAIN_ADMIN"]
+      },
+      {
+        "id": 11,
+        "title": "Agents",
+        "path": "/agents",
+        "roles": ["MAIN_ADMIN"]
+      }
+    ]
+  }
+
+]
