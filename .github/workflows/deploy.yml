@@ -30,13 +30,10 @@ jobs:
             # Pull the latest code
             git pull origin master
 
-            # Build Docker image
-            docker build -t parika-app-client_web .  
-            
-            # Stop and remove existing containersk
-            docker-compose down
-            
-            # Start the containers
-            docker-compose up -d --build
+            # Navigate to the directory where docker-compose.yml file is located
+            cd /var/www/my-apps/
+
+            # Rebuild and restart the Spring Boot container
+            docker-compose up -d --build react-app
             
           EOF
