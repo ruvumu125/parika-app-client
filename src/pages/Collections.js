@@ -26,7 +26,7 @@ function Collections() {
     const [fetchingError, setFetchingError] = useState(null);
     const [collectionGeneralTotal, setCollectionGeneralTotal] = useState(0);
     const [tableTitle, setTableTitle] = useState("Perception des frais de parking aujourd'hui");
-    const name = 'aucune collection';
+    const name = 'aucune perception ';
 
     //date start and end filter
     const [startDate, setStartDate] = useState('');
@@ -245,28 +245,10 @@ function Collections() {
             <div className="page-header">
                 <div className="add-item d-flex">
                     <div className="page-title">
-                        <h4>Employees</h4>
-                        <h6>Manage your employees</h6>
+                        <h4>Perception des frais de parking</h4>
+                        <h6>Gérer des perception des frais de parking</h6>
                     </div>
                 </div>
-                <ul className="table-top-head">
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Pdf"><img src="assets/img/icons/pdf.svg" alt="img"/></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Excel"><img src="assets/img/icons/excel.svg" alt="img"/></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Print"><i data-feather="printer" className="feather-rotate-ccw"></i></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Refresh"><i data-feather="rotate-ccw" className="feather-rotate-ccw"></i></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" className="feather-chevron-up"></i></a>
-                    </li>
-                </ul>
-
             </div>
 
             <div className="card table-list-card">

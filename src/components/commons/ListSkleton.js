@@ -1,11 +1,11 @@
 import React from 'react';
 import Skeleton from "react-loading-skeleton";
 
-const ListSkleton =()=> {
+const ListSkleton =({ title })=> {
     return (
         <>
             <div className="premio">
-                <div className="deuxio"><h4>Expense List</h4></div>
+                <div className="deuxio"><h4>{title}</h4></div>
                 <div className="trio">
                     <Skeleton height={38} count={1}  />
                 </div>

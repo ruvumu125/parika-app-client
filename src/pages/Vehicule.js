@@ -219,36 +219,9 @@ const VehiculeType = () => {
             <div className="page-header">
                 <div className="add-item d-flex">
                     <div className="page-title">
-                        <h4>Type de vehicule</h4>
-                        <h6>Gérer des types de vehicule</h6>
+                        <h4>Véhicule</h4>
+                        <h6>Gérer des véhicules</h6>
                     </div>
-                </div>
-                <ul className="table-top-head">
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Pdf"><img src="/img/pdf.svg" alt="img"/></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Excel"><img src="/img/excel.svg" alt="img"/></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Print"><i data-feather="printer" className="feather-rotate-ccw"></i></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Refresh"><i data-feather="rotate-ccw" className="feather-rotate-ccw"></i></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" className="feather-chevron-up"></i></a>
-                    </li>
-                </ul>
-                <div className="page-btn">
-                    <a
-                        onClick={() =>openAddEditModal(1) }
-                        href="#"
-                        className="btn btn-added"
-                        data-bs-toggle="modal"
-                        data-bs-target="#add-vehicule-type">
-                        <i data-feather="plus-circle" className="me-2"></i>Add New Category
-                    </a>
                 </div>
             </div>
 
@@ -256,17 +229,15 @@ const VehiculeType = () => {
             <div className="card table-list-card">
                 <div className="card-body">
 
-
-
                     {/*skeleton*/}
-                    {isLoading && <ListSkleton/>}
+                    {isLoading && <ListSkleton title="Liste de véhicules"/>}
                     {/*skeleton*/}
 
                     {/*list section*/}
                     {
                         isDataFound && (<><div className="table-top">
                             <div className="search-set">
-                                <h4>Liste de vehicules</h4>
+                                <h4>Liste de véhicules</h4>
 
                             </div>
                             <div className="search-path">
@@ -313,18 +284,20 @@ const VehiculeType = () => {
                                                                     className="dropdown-item"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#sales-details-new">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                                                         width="24"
-                                                                         height="24"
-                                                                         viewBox="0 0 24 24"
-                                                                         fill="none"
-                                                                         stroke="currentColor"
-                                                                         stroke-width="2"
-                                                                         stroke-linecap="round"
-                                                                         stroke-linejoin="round"
-                                                                         className="feather feather-eye info-img">
-                                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                                                        <circle cx="12" cy="12" r="3"></circle></svg>Modifier le vehicule
+                                                                    <svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        width="24"
+                                                                        height="24"
+                                                                        viewBox="0 0 24 24"
+                                                                        fill="none"
+                                                                        stroke="currentColor"
+                                                                        strokeWidth="2"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                        className="feather feather-edit info-img">
+                                                                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                                                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                                                    </svg>Modifier le véhicule
                                                                 </a>
                                                             </li>
 
@@ -336,18 +309,19 @@ const VehiculeType = () => {
                                                                     className="dropdown-item">
                                                                     <svg
                                                                         xmlns="http://www.w3.org/2000/svg"
-                                                                        width="24" height="24"
+                                                                        width="24"
+                                                                        height="24"
                                                                         viewBox="0 0 24 24"
                                                                         fill="none"
                                                                         stroke="currentColor"
-                                                                        stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round"
-                                                                        className="feather feather-plus-circle info-img">
-                                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                                        <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                                        <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                                    </svg>Détails du véhicule
+                                                                        strokeWidth="2"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                        className="feather feather-download info-img">
+                                                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                                                    </svg>Imprimer la carte
                                                                 </a>
                                                             </li>
                                                         </ul>

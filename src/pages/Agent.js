@@ -433,7 +433,7 @@ const Agent = () => {
             <div className="card table-list-card">
                 <div className="card-body">
                     {
-                        isLoading ? (<ListSkleton/>):(
+                        isLoading ? (<ListSkleton title="Liste d'agents"/>):(
                             <>
                                 <div className="table-top">
                                     <div className="search-set">

@@ -27,7 +27,7 @@
       {
 
         "id": 2,
-        "title": "Tarifs",
+        "title": "Prix de stationnement",
         "path": "/prices",
         "roles": ["MAIN_ADMIN","SECONDARY_ADMIN"]
       }
@@ -35,7 +35,7 @@
   },
   {
     "index": 4,
-    "title": "Gestion des entreprises",
+    "title": "Entreprises",
     "icon": "data-feather=\"box\"",
     "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"],
     "childrens": [
@@ -50,7 +50,7 @@
   },
   {
     "index": 5,
-    "title": "Gestion des véhicule",
+    "title": "Véhicules",
     "icon": "data-feather=\"truck\"",
     "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"],
     "childrens": [
@@ -72,7 +72,7 @@
 
       {
         "id": 5,
-        "title": "Parking space list",
+        "title": "Liste de parking space",
         "path": "/parking-spaces",
         "roles": ["MAIN_ADMIN","SECONDARY_ADMIN"]
       }
@@ -80,20 +80,20 @@
   },
   {
     "index": 7,
-    "title": "Collections",
+    "title": "Perception de frais",
     "icon": "data-feather=\"bar-chart\"",
     "roles": ["MAIN_ADMIN","SECONDARY_ADMIN","MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"],
     "childrens": [
 
       {
         "id": 6,
-        "title": "My collections",
+        "title": "Nos perceptions",
         "path": "/collections",
         "roles": ["MAIN_ADMIN","SECONDARY_ADMIN"]
       },
       {
         "id": 7,
-        "title": "All collections",
+        "title": "Toutes les perceptions",
         "path": "/all-collections",
         "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"]
       }
@@ -101,14 +101,14 @@
   },
   {
     "index": 8,
-    "title": "Gestion des utilisateurs",
+    "title": "Utilisateurs",
     "icon": "data-feather=\"user-check\"",
     "roles": ["MAIN_SUPERADMIN", "MAIN_ADMIN"],
     "childrens": [
 
       {
         "id": 8,
-        "title": "super administrateur",
+        "title": "Super administrateur",
         "path": "/super-admins",
         "roles": ["MAIN_SUPERADMIN"]
       },

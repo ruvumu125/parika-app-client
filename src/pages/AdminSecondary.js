@@ -370,30 +370,26 @@ const AdminSecondary = () => {
                         <h6>Gérer des administrateurs</h6>
                     </div>
                 </div>
-                <ul className="table-top-head">
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Pdf"><img src="/img/pdf.svg" alt="img"/></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Excel"><img src="/img/excel.svg" alt="img"/></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Print"><i data-feather="printer" className="feather-rotate-ccw"></i></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Refresh"><i data-feather="rotate-ccw" className="feather-rotate-ccw"></i></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" className="feather-chevron-up"></i></a>
-                    </li>
-                </ul>
                 <div className="page-btn">
                     <a
                         onClick={() =>openAddEditModal(1) }
                         className="btn btn-added"
                         data-bs-toggle="modal"
                         data-bs-target="#add-secondary-admin">
-                        <i data-feather="plus-circle" className="me-2"></i>Add New Category
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="feather feather-plus-circle me-2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="16"></line>
+                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                        </svg> Nouveau administrateur
                     </a>
                 </div>
             </div>
@@ -402,7 +398,7 @@ const AdminSecondary = () => {
             <div className="card table-list-card">
                 <div className="card-body">
                     {
-                        isLoading ? (<ListSkleton/>):(
+                        isLoading ? (<ListSkleton title="Liste des administrateurs"/>):(
                             <>
                                 <div className="table-top">
                                     <div className="search-set">
