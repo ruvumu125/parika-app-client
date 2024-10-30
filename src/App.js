@@ -7,6 +7,9 @@ import PaymentCard from "./pages/PaymentCard";
 import {AuthProvider} from "./components/auth/AuthContext";
 import RequireAuth from "./components/auth/RequireAuth";
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
 
 
@@ -14,6 +17,10 @@ function App() {
 
       <AuthProvider>
         <React.Fragment>
+
+          {/* ToastContainer for global toast notifications */}
+          <ToastContainer />
+
           <BrowserRouter>
             <Routes>
               <Route path="/paul" element={<PaymentCard />} />
