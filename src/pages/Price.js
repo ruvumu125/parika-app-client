@@ -128,9 +128,9 @@ const Price = () => {
             setModalTitle("Modifier le prix de stationnement");
             const parkingPrice = {
                 id: id,
-                companyDto: idCompany,
-                vehicleTypeDto: {
-                    ...newParkingPrice.vehicleTypeDto, id:vehiculeTypeId
+                company: idCompany,
+                vehicleType: {
+                    ...newParkingPrice.vehicleType, id:vehiculeTypeId
                 },
                 price:price
             };
