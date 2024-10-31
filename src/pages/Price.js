@@ -98,7 +98,7 @@ const Price = () => {
     }
 
     const fetchVehiculeTypes=() => {
-        getCompanyVehiculeTypes(companyId)
+        getCompanyVehiculeTypes(companyId,headers)
             .then((data) => {
 
                 console.log(data);
