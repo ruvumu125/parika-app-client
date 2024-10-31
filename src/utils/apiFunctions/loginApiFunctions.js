@@ -10,7 +10,7 @@ export async function loginUser(login) {
             return null
         }
     } catch (error) {
-        console.error(error)
+        console.log(error);
         return null
     }
 }
