@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {getDashboardCount} from "../utils/apiFunctions/dashboardSuperAdmin.js";
 import SkletonDashboardCount from "../components/commons/SkletonDashboardCount.js";
+import {useGetHeader} from "../components/commons/useGetHeader";
 
 const DashboardSuperAdmin=()=> {
 
+    const headers = useGetHeader();
     const [isLoading, setIsLoading] = useState(true);
     const [newDashboardCount, setNewDashboardCount] = useState({
         companyCount: 0,
@@ -15,7 +17,7 @@ const DashboardSuperAdmin=()=> {
     }, []);
     const fetchDashboard = () => {
 
-        getDashboardCount ()
+        getDashboardCount (headers)
             .then((data) => {
                 console.log(data);
                 setNewDashboardCount(data);
