@@ -401,30 +401,26 @@ const Agent = () => {
                         <h6>Gérer des agents</h6>
                     </div>
                 </div>
-                <ul className="table-top-head">
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Pdf"><img src="/img/pdf.svg" alt="img"/></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Excel"><img src="/img/excel.svg" alt="img"/></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Print"><i data-feather="printer" className="feather-rotate-ccw"></i></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Refresh"><i data-feather="rotate-ccw" className="feather-rotate-ccw"></i></a>
-                    </li>
-                    <li>
-                        <a data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" className="feather-chevron-up"></i></a>
-                    </li>
-                </ul>
                 <div className="page-btn">
                     <a
                         onClick={() =>openAddEditModal(1) }
                         className="btn btn-added"
                         data-bs-toggle="modal"
                         data-bs-target="#add-agent">
-                        <i data-feather="plus-circle" className="me-2"></i>Add New Category
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="feather feather-plus-circle me-2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="16"></line>
+                            <line x1="8" y1="12" x2="16" y2="12"></line>
+                        </svg> Nouvelle agent
                     </a>
                 </div>
             </div>
@@ -437,7 +433,7 @@ const Agent = () => {
                             <>
                                 <div className="table-top">
                                     <div className="search-set">
-                                        <h4>Liste des super administrateurs</h4>
+                                        <h4>Liste d'agents</h4>
 
                                     </div>
                                     <div className="search-path">
@@ -512,10 +508,38 @@ const Agent = () => {
                                                                                 href="#"
                                                                                 data-bs-toggle="modal"
                                                                                 data-bs-target="#add-agent">
-                                                                                <i data-feather="edit" className="feather-edit"></i>
+
+                                                                                <svg
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="none"
+                                                                                    stroke="currentColor"
+                                                                                    strokeWidth="2"
+                                                                                    strokeLinecap="round"
+                                                                                    strokeLinejoin="round"
+                                                                                    className="feather feather-edit">
+                                                                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                                                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                                                                </svg>
                                                                             </a>
                                                                             <a className="confirm-text-updated p-2" data-bs-toggle="modal" data-bs-target="#info-alert-modal">
-                                                                                <i data-feather="trash-2" className="feather-trash-2"></i>
+                                                                                <svg
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24"
+                                                                                    height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="none"
+                                                                                    stroke="currentColor"
+                                                                                    strokeWidth="2"
+                                                                                    strokeLinecap="round"
+                                                                                    strokeLinejoin="round"
+                                                                                    className="feather feather-trash-2">
+                                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                                </svg>
                                                                             </a>
                                                                         </div>
                                                                     </td>
