@@ -48,7 +48,7 @@ const DashboardSuperAdmin=()=> {
                                 <div className="dash-count">
                                     <div className="dash-counts">
                                         <h4>{newDashboardCount.companyCount}</h4>
-                                        <h5>Nombre de menages</h5>
+                                        <h5>Nombre d'entreprises</h5>
                                     </div>
                                     <div className="dash-imgs">
                                         <svg
@@ -71,7 +71,7 @@ const DashboardSuperAdmin=()=> {
                                 <div className="dash-count das1">
                                     <div className="dash-counts">
                                         <h4>{newDashboardCount.vehicleCount}</h4>
-                                        <h5>Nombre de fornisseurs</h5>
+                                        <h5>Nombre de véhicules</h5>
                                     </div>
                                     <div className="dash-imgs">
                                         <svg
@@ -96,10 +96,22 @@ const DashboardSuperAdmin=()=> {
                                 <div className="dash-count das2">
                                     <div className="dash-counts">
                                         <h4>{newDashboardCount.vehicleTypeCount}</h4>
-                                        <h5>Nombre de camps</h5>
+                                        <h5>Nombre de types de voitures</h5>
                                     </div>
                                     <div className="dash-imgs">
-                                        <img src="assets/img/file-text-icon-01.svg" className="img-fluid" alt="icon"/>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            className="feather feather-file">
+                                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                            <polyline points="13 2 13 9 20 9"></polyline>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
