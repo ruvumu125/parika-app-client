@@ -149,8 +149,8 @@ const Price = () => {
         fetchParkingPrices();
         setNewParkingPrice({
             "id": 0,
-            "companyDto": idCompany,
-            "vehicleTypeDto": {
+            "company": idCompany,
+            "vehicleType": {
                 "id": 0
             },
             "price": 0
@@ -162,7 +162,7 @@ const Price = () => {
         const { value } = e.target;
         setNewParkingPrice(prevState => ({
             ...prevState,
-            vehicleTypeDto: {
+            vehicleType: {
                 id: parseInt(value)
             }
         }));
@@ -184,8 +184,8 @@ const Price = () => {
             if (success !== undefined) {
                 setNewParkingPrice({
                     "id": 0,
-                    "companyDto": idCompany,
-                    "vehicleTypeDto": {
+                    "company": idCompany,
+                    "vehicleType": {
                         "id": 0
                     },
                     "price": 0
@@ -450,7 +450,7 @@ const Price = () => {
                                                     id="id"
                                                     name="id"
                                                     className="form-select"
-                                                    value={newParkingPrice.vehicleTypeDto.id}
+                                                    value={newParkingPrice.vehicleType.id}
                                                     onChange={handleVehicleTypeChange}>
                                                     <option value={selectedVehiculeTypeId}>{selectedVehiculeTypeName}</option>
                                                     {
