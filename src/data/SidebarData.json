@@ -2,13 +2,14 @@
   {
     "index": 1,
     "title": "Tableau de bord",
-    "path": "/vehicule-types",
+    "path": "/dashboard-main",
     "icon": "data-feather=\"grid\"",
     "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"]
   },
   {
     "index": 2,
     "title": "Tableau de bord",
+    "path": "/dashboard",
     "icon": "data-feather=\"grid\"",
     "roles": ["MAIN_ADMIN","SECONDARY_ADMIN"]
   },
