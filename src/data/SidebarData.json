@@ -2,6 +2,7 @@
   {
     "index": 1,
     "title": "Tableau de bord",
+    "path": "/vehicule-types",
     "icon": "data-feather=\"grid\"",
     "roles": ["MAIN_SUPERADMIN","SECONDARY_SUPERADMIN"]
   },
