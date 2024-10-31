@@ -75,6 +75,7 @@ const Price = () => {
     useEffect(() => {
         fetchParkingPrices();
         fetchVehiculeTypes();
+        console.log(companyId);
     }, [page,searchTerm]);
 
     const fetchParkingPrices = () => {
@@ -99,6 +100,8 @@ const Price = () => {
     const fetchVehiculeTypes=() => {
         getCompanyVehiculeTypes(companyId)
             .then((data) => {
+
+                console.log(data);
                 setVehiculeTypes(data)
 
             })
