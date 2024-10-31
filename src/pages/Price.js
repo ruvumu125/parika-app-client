@@ -59,8 +59,8 @@ const Price = () => {
     const [newParkingPrice, setNewParkingPrice] = useState(
         {
             "id": 0,
-            "companyDto": idCompany,
-            "vehicleTypeDto": {
+            "company": idCompany,
+            "vehicleType": {
                 "id": 0
             },
             "price": 0
