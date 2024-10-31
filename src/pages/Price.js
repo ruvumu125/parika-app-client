@@ -59,8 +59,8 @@ const Price = () => {
     const [newParkingPrice, setNewParkingPrice] = useState(
         {
             "id": 0,
-            "companyDto": idCompany,
-            "vehicleTypeDto": {
+            "company": idCompany,
+            "vehicleType": {
                 "id": 0
             },
             "price": 0
@@ -128,9 +128,9 @@ const Price = () => {
             setModalTitle("Modifier le prix de stationnement");
             const parkingPrice = {
                 id: id,
-                companyDto: idCompany,
-                vehicleTypeDto: {
-                    ...newParkingPrice.vehicleTypeDto, id:vehiculeTypeId
+                company: idCompany,
+                vehicleType: {
+                    ...newParkingPrice.vehicleType, id:vehiculeTypeId
                 },
                 price:price
             };
@@ -149,8 +149,8 @@ const Price = () => {
         fetchParkingPrices();
         setNewParkingPrice({
             "id": 0,
-            "companyDto": idCompany,
-            "vehicleTypeDto": {
+            "company": idCompany,
+            "vehicleType": {
                 "id": 0
             },
             "price": 0
@@ -162,7 +162,7 @@ const Price = () => {
         const { value } = e.target;
         setNewParkingPrice(prevState => ({
             ...prevState,
-            vehicleTypeDto: {
+            vehicleType: {
                 id: parseInt(value)
             }
         }));
@@ -184,8 +184,8 @@ const Price = () => {
             if (success !== undefined) {
                 setNewParkingPrice({
                     "id": 0,
-                    "companyDto": idCompany,
-                    "vehicleTypeDto": {
+                    "company": idCompany,
+                    "vehicleType": {
                         "id": 0
                     },
                     "price": 0
