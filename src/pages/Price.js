@@ -59,8 +59,8 @@ const Price = () => {
     const [newParkingPrice, setNewParkingPrice] = useState(
         {
             "id": 0,
-            "company": idCompany,
-            "vehicleType": {
+            "companyDto": idCompany,
+            "vehicleTypeDto": {
                 "id": 0
             },
             "price": 0
@@ -162,7 +162,7 @@ const Price = () => {
         const { value } = e.target;
         setNewParkingPrice(prevState => ({
             ...prevState,
-            vehicleType: {
+            vehicleTypeDto: {
                 id: parseInt(value)
             }
         }));
@@ -184,8 +184,8 @@ const Price = () => {
             if (success !== undefined) {
                 setNewParkingPrice({
                     "id": 0,
-                    "company": idCompany,
-                    "vehicleType": {
+                    "companyDto": idCompany,
+                    "vehicleTypeDto": {
                         "id": 0
                     },
                     "price": 0
